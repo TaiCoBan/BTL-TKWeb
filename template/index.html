@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../static/JS/ComponentsManager.js"></script>
-    <link rel="icon" type="image/x-icon" href="../static/image/favicon/favicon.ico">
-    <link ref="stylesheet" href="../static/css/style.css">
-
-    <title>Trang chủ</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reuse HTML with External JS</title>
+  <link rel="stylesheet" href="../static/css/components-style.css"> <!-- File CSS riêng -->
 </head>
 <body>
-    <h1>Trang chủ</h1>
-    <my-header class="header"></my-header>
+  <div id="header"></div>
+  <div id="content">
+    <p>This is the main content of the page.</p>
+  </div>
+  <div id="footer"></div>
+
+  <script src="../static/JS/ComponentsManager.js"></script> <!-- Liên kết đến file JavaScript -->
 </body>
 </html>
