@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reuse HTML with External JS</title>
   <link rel="stylesheet" href="../static/css/components-style.css"> <!-- File CSS riêng -->
 </head>
+
 <body>
   <div id="header"></div>
   <div id="content">
@@ -14,5 +16,10 @@
   <div id="footer"></div>
 
   <script src="../static/JS/ComponentsManager.js"></script> <!-- Liên kết đến file JavaScript -->
+  <script>
+    loadComponent('header', headerHTML);
+    loadComponent('footer', footerHTML);
+  </script>
 </body>
+
 </html>

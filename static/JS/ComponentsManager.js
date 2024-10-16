@@ -3,7 +3,7 @@ function loadComponent(id, htmlContent) {
 }
 
 const headerHTML = `
-  <header class="header">
+  <header class="header-style">
     <h1>Welcome to My Website</h1>
     <nav>
       <a href="#">Home</a> | 
@@ -19,5 +19,13 @@ const footerHTML = `
   </footer>
 `;
 
-loadComponent('header', headerHTML);
-loadComponent('footer', footerHTML);
+const sideBarAP = `
+  <div class="side-bar-ap">
+    <img src="../static/image/logo/user.png">
+    <a href="#">Đơn hàng</a>
+    <a href="#">Thống kê</a>
+    <a href="#">Thông báo</a>
+    <a href="#">Cài đặt</a>
+    <a href="#">Thoát</a>
+  </div>
+`;

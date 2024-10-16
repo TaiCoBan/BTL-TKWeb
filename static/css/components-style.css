@@ -1,3 +1,61 @@
-.header {
+.header-style {
+    background-color: #818181;
     color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.footer-style {
+    background-color: #818181;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+/* sidebar admin page */
+.side-bar-ap {
+    margin-top: 0;
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: auto;
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column; /* căn các theo chiều dọc */
+    align-items: center; /* căn giữa theo chiều ngang */
+    justify-content: center;
+}
+
+.side-bar-ap img {
+    margin-top: -250px;
+    margin-bottom: 40px;
+    max-width: 80%;
+    color: white;
+}
+
+.side-bar-ap a {
+    width: 100%;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block; /* 1 liên kết 1 dòng */
+    text-align: center; /* căn giữa ND */
+    padding-left: 100%;
+    padding-right: 100%;
+}
+
+.side-bar-ap a:hover {
+    color: #f1f1f1;
+    background-color: slategray;
 }
