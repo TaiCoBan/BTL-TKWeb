@@ -1,0 +1,134 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.login h2 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #333;
+}
+.login input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.login button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.login button:hover {
+    background-color: #45a049;
+}
+
+.tosignup {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.tosignup a {
+    text-decoration: none; 
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.tosignup a:hover {
+    color: #0056b3;
+
+}
+
+div.backtotop{
+    width: 50px;
+    height: 50px;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+}
+
+div.buttonUser{
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+div.account{
+    width: 100%;
+    height: 40px;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+}
+div.account span{
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+
+.account:hover .dropdown{
+    display: block;
+}
+
+.dropdown {
+    position: absolute;
+    top:35px;
+    right: 0;
+    display: none;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    z-index: 1;
+}
+
+.dropdown .btn {
+    display: block;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+    text-align: left;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 14px;
+}
+
+.dropdown .btn:last-child {
+    border-bottom: none;
+}
+
+.dropdown .btn:hover {
+    background-color: #f1f1f1;
+}
